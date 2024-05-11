@@ -17,7 +17,7 @@ class MotoController extends Controller
         $dadosMotos = Moto::all();
         $contador = $dadosMotos->count();
 
-        return 'Motos: ' . $contador;
+        return 'Motos: ' . $contador.$dadosMotos;
     }
 
     /**
